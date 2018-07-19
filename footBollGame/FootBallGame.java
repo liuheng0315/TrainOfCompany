@@ -1,9 +1,5 @@
 package footBollGame;
 
-import com.sun.corba.se.spi.activation.Server;
-
-import java.util.ArrayList;
-
 /*
 设计一段程序，小型半场足球赛：
 	两只足球队，各有5名队员；（工厂模式）
@@ -19,16 +15,17 @@ public class FootBallGame {
         footBollGame.Server server = new footBollGame.Server();
         Thread serverThread = new Thread(server);
         serverThread.start();
-        MyThread thread1 = new MyThread("thread1");
-        MyThread thread2 = new MyThread("thread2");
-        MyThread thread3 = new MyThread("thread3");
-        MyThread thread4 = new MyThread("thread4");
-        MyThread thread5 = new MyThread("thread5");
-        MyThread thread6 = new MyThread("thread6");
-        MyThread thread7 = new MyThread("thread7");
-        MyThread thread8 = new MyThread("thread8");
-        MyThread thread9 = new MyThread("thread9");
-        MyThread thread10 = new MyThread("thread10");
+        MyThread myThread = new MyThread();
+        Thread thread1 = new Thread(myThread,"thread1");
+        Thread thread2 = new Thread(myThread,"thread2");
+        Thread thread3 = new Thread(myThread,"thread3");
+        Thread thread4 = new Thread(myThread,"thread4");
+        Thread thread5 = new Thread(myThread,"thread5");
+        Thread thread6 = new Thread(myThread,"thread6");
+        Thread thread7 = new Thread(myThread,"thread7");
+        Thread thread8 = new Thread(myThread,"thread8");
+        Thread thread9 = new Thread(myThread,"thread9");
+        Thread thread10 = new Thread(myThread,"thread10");
         thread1.start();
         thread2.start();
         thread3.start();

@@ -12,7 +12,7 @@ public class Client {
             Socket socket = new Socket("127.0.0.1", 6688);
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
             out.writeUTF(str);
-            System.out.println("client发送"+str);
+            System.out.println("client:"+str);
             DataInputStream in = new DataInputStream(socket.getInputStream());
             String str2 = in.readUTF();
             if (str2 .equals("1")) {
