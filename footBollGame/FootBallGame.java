@@ -16,6 +16,7 @@ public class FootBallGame {
         Thread serverThread = new Thread(server);
         serverThread.start();
         MyThread myThread = new MyThread();
+        //工厂模式拿到线程
         Thread thread1 = TeamFactory.getThread(myThread, "thread1");
         Thread thread2 = TeamFactory.getThread(myThread, "thread2");
         Thread thread3 = TeamFactory.getThread(myThread, "thread3");
