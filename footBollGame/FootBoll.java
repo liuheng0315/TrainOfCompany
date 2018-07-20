@@ -2,7 +2,7 @@ package footBollGame;
 
 public class FootBoll {
     private static FootBoll footBoll=null;
-    //球的单利
+    //球的单利模式
     public static FootBoll getBoll() {
         if (footBoll == null) {
             synchronized (FootBoll.class) {
