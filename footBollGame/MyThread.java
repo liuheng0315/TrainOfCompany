@@ -4,7 +4,7 @@ public class MyThread extends Thread{
     private static int count1=0;//第一只球队的进球数
     private static int count2=0;//第二只球队的进球数
     volatile boolean flag=true;
-    int count=30;//count为最终胜利的进球数
+    int count=5;//count为最终胜利的进球数
 
     private volatile int bollnum=0;
     @Override
